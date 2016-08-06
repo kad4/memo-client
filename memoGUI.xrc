@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxFrame" name="notificationFrame">
+		<style>wxFRAME_NO_TASKBAR|wxRESIZE_BORDER|wxSTAY_ON_TOP|wxTAB_TRAVERSAL</style>
+		<size>321,271</size>
+		<title></title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxPanel" name="parentPanel">
+			<style>wxTAB_TRAVERSAL</style>
+			<size>300,200</size>
+			<fg>#000000</fg>
+			<object class="wxFlexGridSizer">
+				<rows>2</rows>
+				<cols>1</cols>
+				<vgap>0</vgap>
+				<hgap>0</hgap>
+				<growablecols>1</growablecols>
+				<growablerows>1</growablerows>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+					<border>5</border>
+					<object class="wxStaticText" name="titleLabel">
+						<font>
+							<size>14</size>
+							<family>swiss</family>
+							<style>normal</style>
+							<weight>bold</weight>
+							<underlined>0</underlined>
+							<face>Calibri</face>
+						</font>
+						<label>memoKAD</label>
+						<wrap>-1</wrap>
+					</object>
+				</object>
+				<object class="spacer">
+					<option>1</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<size>0,0</size>
+				</object>
+				<object class="sizeritem">
+					<option>1</option>
+					<flag>wxEXPAND|wxALL</flag>
+					<border>5</border>
+					<object class="wxScrolledWindow" name="infoPanel">
+						<style>wxVSCROLL</style>
+						<size>300,200</size>
+						<scrollrate>5,5</scrollrate>
+					</object>
+				</object>
+				<object class="spacer">
+					<option>1</option>
+					<flag>wxEXPAND</flag>
+					<border>5</border>
+					<size>0,0</size>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="loginDialog">
+		<style>wxCAPTION</style>
+		<title>memoKAD Login</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxPanel" name="parentPanel">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxStaticText" name="loginMessage">
+								<label>It seems that you are not logged in on this computer</label>
+								<wrap>-1</wrap>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxFlexGridSizer">
+								<rows>2</rows>
+								<cols>2</cols>
+								<vgap>0</vgap>
+								<hgap>0</hgap>
+								<growablecols>1</growablecols>
+								<growablerows></growablerows>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="userLabel">
+										<label>User Name</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxEXPAND|wxALL</flag>
+									<border>5</border>
+									<object class="wxTextCtrl" name="userNameInput">
+										<value></value>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL</flag>
+									<border>5</border>
+									<object class="wxStaticText" name="passwordLabel">
+										<label>Password</label>
+										<wrap>-1</wrap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxEXPAND|wxBOTTOM|wxRIGHT|wxLEFT</flag>
+									<border>5</border>
+									<object class="wxTextCtrl" name="passwordInput">
+										<style>wxTE_PASSWORD</style>
+										<value></value>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxTOP|wxBOTTOM</flag>
+									<border>5</border>
+									<object class="wxButton" name="loginButton">
+										<label>Sign in</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxTOP|wxBOTTOM</flag>
+									<border>5</border>
+									<object class="wxButton" name="forgotButton">
+										<label>Forgot Password</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxTOP|wxBOTTOM</flag>
+									<border>5</border>
+									<object class="wxButton" name="registerButton">
+										<label>Join</label>
+										<default>0</default>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxTOP|wxBOTTOM</flag>
+									<border>5</border>
+									<object class="wxButton" name="cancelButton">
+										<label>Cancel</label>
+										<default>0</default>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="mainFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>750,450</size>
+		<title></title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxPanel" name="parentPanel">
+			<style>wxTAB_TRAVERSAL</style>
+			<object class="wxFlexGridSizer">
+				<rows>1</rows>
+				<cols>3</cols>
+				<vgap>0</vgap>
+				<hgap>1</hgap>
+				<growablecols>1</growablecols>
+				<growablerows>0</growablerows>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND|wxALL</flag>
+					<border>5</border>
+					<object class="wxTreeCtrl" name="noteList">
+						<style>wxTR_DEFAULT_STYLE|wxTR_SINGLE</style>
+						<size>150,-1</size>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>1</option>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+					<object class="wxHtmlWindow" name="noteWindow">
+						<style>wxHW_SCROLLBAR_AUTO|wxSIMPLE_BORDER</style>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>1</option>
+					<flag>wxEXPAND|wxALL</flag>
+					<border>5</border>
+					<object class="wxScrolledWindow" name="buttonPanel">
+						<style>wxSIMPLE_BORDER</style>
+						<bg>#ffffff</bg>
+						<scrollrate>5,5</scrollrate>
+						<object class="wxBoxSizer">
+							<minsize>100,100</minsize>
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+								<border>5</border>
+								<object class="wxButton" name="newButton">
+									<size>100,100</size>
+									<label>New</label>
+									<default>0</default>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxButton" name="editButton">
+									<size>100,100</size>
+									<label>Edit</label>
+									<default>0</default>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxButton" name="delButton">
+									<size>100,100</size>
+									<label>Delete</label>
+									<default>0</default>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxButton" name="accountButton">
+									<size>100,100</size>
+									<label>Account Settings</label>
+									<default>0</default>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="consoleFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<title></title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxPanel" name="m_panel5">
+			<style>wxTAB_TRAVERSAL</style>
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL</flag>
+					<border>5</border>
+					<object class="wxStaticText" name="m_staticText6">
+						<label>Output</label>
+						<wrap>-1</wrap>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxEXPAND | wxALL</flag>
+					<border>5</border>
+					<object class="wxStaticLine" name="m_staticline1">
+						<style>wxLI_HORIZONTAL</style>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL</flag>
+					<border>5</border>
+					<object class="wxStaticText" name="console">
+						<size>500,300</size>
+						<label></label>
+						<wrap>-1</wrap>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>
